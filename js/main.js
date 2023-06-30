@@ -21,7 +21,7 @@ if (agePassenger < 18) {
     console.log (discountedPrice)
     // Stampo in HTML i risultati
     document.getElementById("discount") .innerHTML = "Complimenti, hai diritto ad uno sconto del 20%"
-    document.getElementById("final-price") .innerHTML = "il costo del tuo biglietto è di " + discountedPrice + "€"
+    document.getElementById("final-price") .innerHTML = "il costo del tuo biglietto è di " + discountedPrice.toFixed(2) + "€"
 } else if (agePassenger > 65) {
     // Assegno variabili relative a questa funzione
     let coupon = (ticketPrice * 0.4);
@@ -31,7 +31,7 @@ if (agePassenger < 18) {
     console.log (discountedPrice)
     // Stampo in HTML i risultati
     document.getElementById("discount") .innerHTML = "Complimenti, hai diritto ad uno sconto del 40%"
-    document.getElementById("final-price") .innerHTML = "il costo del tuo biglietto è di " + discountedPrice + "€"
+    document.getElementById("final-price") .innerHTML = "il costo del tuo biglietto è di " + discountedPrice.toFixed(2) + "€"
 } else {
-    document.getElementById("final-price") .innerHTML = "il costo del tuo biglietto è di " + ticketPrice + "€"
+    document.getElementById("final-price") .innerHTML = "il costo del tuo biglietto è di " + ticketPrice.toFixed(2) + "€"
 }
